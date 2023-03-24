@@ -18,7 +18,7 @@
   }
   .title {
     @include banner_position;
-    top: 300px;
+    top: 255px;
     left: 550px;
     h1 {
       margin-bottom: 30px;
@@ -29,19 +29,27 @@
       left: 290px;
     }
     @include iphone {
-      left: 280px;
+      left: 285px;
     }
   }
   .icons {
     position: absolute;
-    top: 450px;
+    top: 400px;
     left: 550px;
+    img {
+      @include ipad {
+        width: 10%;
+      }
+      @include iphone {
+        width: 10%;
+      }
+    }
     @include ipad {
       top: 400px;
-      left: 300px;
+      left: 290px;
     }
     @include iphone {
-      left: 280px;
+      left: 285px;
     }
   }
 }

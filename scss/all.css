@@ -160,37 +160,37 @@ h2 {
 .banner .sentence {
   color: white;
   position: absolute;
-  top: 250px;
+  top: 235px;
   left: 520px;
 }
 @media all and (max-width: 768px) {
   .banner .sentence {
-    top: 250px;
-    left: 280px;
+    top: 235px;
+    left: 290px;
   }
 }
 @media all and (max-width: 767px) {
   .banner .sentence {
-    left: 260px;
+    left: 295px;
   }
 }
 .banner .title {
   color: white;
   position: absolute;
-  top: 250px;
+  top: 235px;
   left: 520px;
-  top: 300px;
+  top: 255px;
   left: 550px;
 }
 @media all and (max-width: 768px) {
   .banner .title {
-    top: 250px;
-    left: 280px;
+    top: 235px;
+    left: 290px;
   }
 }
 @media all and (max-width: 767px) {
   .banner .title {
-    left: 260px;
+    left: 295px;
   }
 }
 .banner .title h1 {
@@ -204,23 +204,33 @@ h2 {
 }
 @media all and (max-width: 767px) {
   .banner .title {
-    left: 280px;
+    left: 285px;
   }
 }
 .banner .icons {
   position: absolute;
-  top: 450px;
+  top: 400px;
   left: 550px;
+}
+@media all and (max-width: 768px) {
+  .banner .icons img {
+    width: 10%;
+  }
+}
+@media all and (max-width: 767px) {
+  .banner .icons img {
+    width: 10%;
+  }
 }
 @media all and (max-width: 768px) {
   .banner .icons {
     top: 400px;
-    left: 300px;
+    left: 290px;
   }
 }
 @media all and (max-width: 767px) {
   .banner .icons {
-    left: 280px;
+    left: 285px;
   }
 }
 
