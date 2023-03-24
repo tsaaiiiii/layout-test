@@ -1,0 +1,29 @@
+@mixin banner_position {
+  color: white;
+  position: absolute;
+  top: 250px;
+  left: 520px;
+  @include ipad {
+    left: 280px;
+  }
+  @include iphone {
+    left: 260px;
+  }
+}
+
+@mixin mac {
+  @media all and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin ipad {
+  @media all and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
