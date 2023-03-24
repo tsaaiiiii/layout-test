@@ -4,6 +4,7 @@
   top: 250px;
   left: 520px;
   @include ipad {
+    top: 250px;
     left: 280px;
   }
   @include iphone {
