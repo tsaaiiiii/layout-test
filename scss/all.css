@@ -87,9 +87,8 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -135,198 +134,229 @@ table {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.banner {
+.self_page {
+  background-image: url(../photo/banner.png);
+  height: 958px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 280px;
   max-width: 100%;
 }
-.banner .banner_img {
-  position: relative;
+
+.container {
+  max-width: 100%;
+  text-align: center;
 }
-@media all and (max-width: 768px) {
-  .banner .banner_img img {
-    height: 500px;
-  }
-}
-.banner .sentence {
+
+.homepage {
   color: white;
-  position: absolute;
-  top: 235px;
-  left: 520px;
 }
-@media all and (max-width: 768px) {
-  .banner .sentence {
-    top: 235px;
-    left: 290px;
-  }
-}
-@media all and (max-width: 767px) {
-  .banner .sentence {
-    left: 295px;
-  }
-}
-.banner .title {
-  color: white;
-  position: absolute;
-  top: 235px;
-  left: 520px;
-  top: 255px;
-  left: 550px;
-}
-@media all and (max-width: 768px) {
-  .banner .title {
-    top: 235px;
-    left: 290px;
-  }
-}
-@media all and (max-width: 767px) {
-  .banner .title {
-    left: 295px;
-  }
-}
-.banner .title h1 {
-  margin-bottom: 30px;
-}
-@media all and (max-width: 768px) {
-  .banner .title {
-    top: 270px;
-    left: 290px;
-  }
-}
-@media all and (max-width: 767px) {
-  .banner .title {
-    left: 285px;
-  }
-}
-.banner .icons {
-  position: absolute;
-  top: 400px;
-  left: 550px;
-}
-@media all and (max-width: 768px) {
-  .banner .icons img {
-    width: 10%;
-  }
-}
-@media all and (max-width: 767px) {
-  .banner .icons img {
-    width: 10%;
+@media all and (max-width: 1920px) {
+  .homepage {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 @media all and (max-width: 768px) {
-  .banner .icons {
-    top: 400px;
-    left: 290px;
+  .homepage {
+    padding: 0px;
   }
 }
-@media all and (max-width: 767px) {
-  .banner .icons {
-    left: 285px;
-  }
+.homepage .title {
+  display: inline-block;
+  text-align: left;
+  padding-left: 40px;
+}
+.homepage .name {
+  text-align: left;
+}
+.homepage .name h1 {
+  margin-top: 20px;
+  font-style: italic;
+}
+.homepage .name h3 {
+  margin-top: 28px;
+  line-height: 32px;
+}
+.homepage .icons {
+  margin-top: 32px;
 }
 
 .about {
-  max-width: 100%;
-  text-align: center;
-  margin: 40px 0px;
+  margin-top: 400px;
 }
-.about .intro {
-  margin-top: 40px;
+.about img {
+  margin-top: 36px;
 }
 .about h3 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
-.about .line {
+.about .school {
+  line-height: 28px;
+}
+.about .hr {
+  border: solid 1px black;
+  width: 400px;
   display: inline-block;
-  border: solid 1px #9d9d9d;
-  width: 250px;
-  height: 1px;
-  margin: 20px 0px;
+  text-align: center;
 }
-.about ul li {
-  margin-bottom: 10px;
+.about .textAndBalls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-.about ul li .redBalls {
-  display: inline-block;
+.about .textAndBalls .redBalls {
   border: solid 1px #891818;
-  background-color: #891818;
-  width: 12px;
-  height: 12px;
   border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+}
+.about .textAndBalls .intro_flex_text {
+  font-size: 24px;
+  margin-left: 10px;
 }
 
 .myBrand {
-  max-width: 100%;
-  padding-top: 30px;
-  margin-top: 100px;
-  text-align: center;
-  color: white;
   background-color: black;
+  color: white;
+  margin-top: 100px;
 }
-.myBrand h2 {
-  margin-bottom: 20px;
-}
-.myBrand h3 {
-  font-weight: normal;
-}
-.myBrand span h3 {
-  margin: 40px;
-  line-height: 24px;
-}
-.myBrand .brandImgs {
-  display: flex;
-  padding: 20px 50px;
-}
-@media all and (max-width: 767px) {
-  .myBrand .brandImgs {
-    display: block;
-  }
-}
-
-.works {
-  max-width: 100%;
-  text-align: center;
-  margin-top: 60px;
-}
-.works h3 {
-  margin-top: 30px;
-  line-height: 24px;
-}
-.works .workImg {
-  display: flex;
-  margin-top: 30px;
-}
-@media all and (max-width: 1280px) {
-  .works .workImg {
-    margin-left: 80px;
+@media all and (max-width: 1920px) {
+  .myBrand {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 @media all and (max-width: 768px) {
-  .works .workImg {
-    margin-left: 0px;
+  .myBrand {
+    padding: 0px;
   }
+}
+.myBrand h2 {
+  padding: 28px;
+}
+.myBrand .h3 {
+  margin-top: 36px;
+  line-height: 32px;
+}
+.myBrand .brand_img1 img {
+  width: 100%;
+}
+@media all and (max-width: 1920px) {
+  .myBrand .brand_img1 img {
+    padding: 40px 240px 40px 240px;
+  }
+}
+@media all and (max-width: 1280px) {
+  .myBrand .brand_img1 img {
+    padding: 40px 120px 40px 120px;
+  }
+}
+@media all and (max-width: 768px) {
+  .myBrand .brand_img1 img {
+    padding: 20px 60px 20px 60px;
+  }
+}
+.myBrand .brand_img_flex {
+  display: flex;
+}
+@media all and (max-width: 768px) {
+  .myBrand .brand_img_flex {
+    display: block;
+  }
+}
+.myBrand .brand_img_flex img {
+  width: 100%;
+}
+@media all and (max-width: 768px) {
+  .myBrand .brand_img_flex img {
+    padding: 20px 60px 20px 60px;
+  }
+}
+.myBrand .brand_img_flex .brand_img2 {
+  margin-right: 20px;
+  width: 100%;
+}
+.myBrand .brand_img_flex .brand_img3 {
+  width: 100%;
+}
+
+.other_works {
+  margin-top: 100px;
+}
+.other_works h3 {
+  margin-top: 20px;
+  line-height: 32px;
+}
+@media all and (max-width: 1920px) {
+  .other_works {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media all and (max-width: 768px) {
+  .other_works {
+    padding: 0px;
+  }
+}
+.other_works .works {
+  display: flex;
+  margin-top: 24px;
+}
+.other_works .works img {
+  width: 100%;
+}
+.other_works .works h3 {
+  margin-top: 4px;
+}
+@media all and (max-width: 768px) {
+  .other_works .works h3 {
+    font-size: 20px;
+  }
+}
+.other_works .works .work_img2,
+.other_works .works .work_img7 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.other_works .works .work_img4 {
+  margin-right: 12px;
 }
 
 .footer {
-  margin-top: 100px;
-  padding: 30px;
-  text-align: center;
   background-color: black;
   color: white;
+  margin-top: 100px;
 }
 .footer h2 {
-  margin-bottom: 20px;
+  padding: 32px 32px 0px 32px;
 }
-.footer h3 {
-  margin-top: 10px;
-  font-weight: normal;
+.footer .mail_tel {
+  padding-bottom: 32px;
+}
+.footer a {
+  color: white;
+  display: block;
+  margin-top: 12px;
+  text-decoration: none;
 }/*# sourceMappingURL=all.css.map */

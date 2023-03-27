@@ -1,148 +1,193 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-.banner {
+
+.self_page {
+  background-image: url(../photo/banner.png);
+  height: 958px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 280px;
   max-width: 100%;
-
-  .banner_img {
-    position: relative;
-    img {
-      @include ipad {
-        height: 500px;
-      }
-    }
+}
+.container {
+  max-width: 100%;
+  text-align: center;
+}
+.homepage {
+  color: white;
+  @include xl {
+    padding-left: 120px;
+    padding-right: 120px;
   }
-
-  .sentence {
-    @include banner_position;
+  @include md {
+    padding: 0px;
   }
   .title {
-    @include banner_position;
-    top: 255px;
-    left: 550px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 40px;
+  }
+  .name {
+    text-align: left;
     h1 {
-      margin-bottom: 30px;
+      margin-top: 20px;
+      font-style: italic;
     }
-
-    @include ipad {
-      top: 270px;
-      left: 290px;
-    }
-    @include iphone {
-      left: 285px;
+    h3 {
+      margin-top: 28px;
+      line-height: 32px;
     }
   }
   .icons {
-    position: absolute;
-    top: 400px;
-    left: 550px;
-    img {
-      @include ipad {
-        width: 10%;
-      }
-      @include iphone {
-        width: 10%;
-      }
-    }
-    @include ipad {
-      top: 400px;
-      left: 290px;
-    }
-    @include iphone {
-      left: 285px;
-    }
+    margin-top: 32px;
   }
 }
 
 .about {
-  max-width: 100%;
-  text-align: center;
-  margin: 40px 0px;
-  .intro {
-    margin-top: 40px;
+  margin-top: 400px;
+  img {
+    margin-top: 36px;
   }
   h3 {
-    margin-top: 10px;
+    margin-top: 20px;
   }
-  .line {
+  .school {
+    line-height: 28px;
+  }
+  .hr {
+    border: solid 1px black;
+    width: 400px;
     display: inline-block;
-    border: solid 1px #9d9d9d;
-    width: 250px;
-    height: 1px;
-    margin: 20px 0px;
+    text-align: center;
   }
-  ul {
-    li {
-      margin-bottom: 10px;
-      .redBalls {
-        display: inline-block;
-        border: solid 1px #891818;
-        background-color: #891818;
-        width: 12px;
-        height: 12px;
-        border-radius: 100%;
-      }
+
+  .textAndBalls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .redBalls {
+      border: solid 1px #891818;
+      border-radius: 100%;
+      width: 22px;
+      height: 22px;
+      background-color: #891818;
+    }
+    .intro_flex_text {
+      font-size: 24px;
+      margin-left: 10px;
     }
   }
 }
 
 .myBrand {
-  max-width: 100%;
-  padding-top: 30px;
-  margin-top: 100px;
-  text-align: center;
-  color: white;
   background-color: black;
+  color: white;
+  margin-top: 100px;
+  @include xl {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @include md {
+    padding: 0px;
+  }
+
   h2 {
-    margin-bottom: 20px;
+    padding: 28px;
   }
-  h3 {
-    font-weight: normal;
+  .h3 {
+    margin-top: 36px;
+    line-height: 32px;
   }
-  span h3 {
-    margin: 40px;
-    line-height: 24px;
+  .brand_img1 img {
+    width: 100%;
+    @include xl {
+      padding: 40px 240px 40px 240px;
+    }
+    @include lg {
+      padding: 40px 120px 40px 120px;
+    }
+    @include md {
+      padding: 20px 60px 20px 60px;
+    }
   }
-  .brandImgs {
+  .brand_img_flex {
     display: flex;
-    padding: 20px 50px;
-    @include iphone {
+    @include md {
       display: block;
+    }
+    img {
+      width: 100%;
+      @include md {
+        padding: 20px 60px 20px 60px;
+      }
+    }
+    .brand_img2 {
+      margin-right: 20px;
+      width: 100%;
+    }
+    .brand_img3 {
+      width: 100%;
     }
   }
 }
 
-.works {
-  max-width: 100%;
-  text-align: center;
-  margin-top: 60px;
+.other_works {
+  margin-top: 100px;
   h3 {
-    margin-top: 30px;
-    line-height: 24px;
+    margin-top: 20px;
+    line-height: 32px;
   }
-  .workImg {
+  @include xl {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @include md {
+    padding: 0px;
+  }
+
+  .works {
     display: flex;
-    margin-top: 30px;
-    @include mac {
-      margin-left: 80px;
+    margin-top: 24px;
+    img {
+      width: 100%;
     }
-    @include ipad {
-      margin-left: 0px;
+    h3 {
+      @include md {
+        font-size: 20px;
+      }
+      margin-top: 4px;
+    }
+
+    .work_img2,
+    .work_img7 {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    .work_img4 {
+      margin-right: 12px;
     }
   }
 }
 
 .footer {
-  margin-top: 100px;
-  padding: 30px;
-  text-align: center;
   background-color: black;
   color: white;
+  margin-top: 100px;
+
   h2 {
-    margin-bottom: 20px;
+    padding: 32px 32px 0px 32px;
   }
-  h3 {
-    margin-top: 10px;
-    font-weight: normal;
+  .mail_tel {
+    padding-bottom: 32px;
+  }
+  a {
+    color: white;
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
   }
 }
