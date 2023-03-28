@@ -153,6 +153,9 @@
 
   .works {
     display: flex;
+    @include md {
+      display: block;
+    }
     margin-top: 24px;
     img {
       width: 100%;
@@ -163,14 +166,29 @@
       }
       margin-top: 4px;
     }
+    .img {
+      @include md {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 32px;
+      }
+    }
 
     .work_img2,
     .work_img7 {
       margin-left: 12px;
       margin-right: 12px;
+      @include md {
+        margin: 0px;
+        margin-top: 32px;
+      }
     }
     .work_img4 {
       margin-right: 12px;
+      @include md {
+        margin: 0px;
+        margin-top: 32px;
+      }
     }
   }
 }

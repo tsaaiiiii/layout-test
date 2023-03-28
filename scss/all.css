@@ -147,7 +147,9 @@ h3 {
   font-size: 24px;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -323,6 +325,11 @@ h3 {
   display: flex;
   margin-top: 24px;
 }
+@media all and (max-width: 768px) {
+  .other_works .works {
+    display: block;
+  }
+}
 .other_works .works img {
   width: 100%;
 }
@@ -334,13 +341,33 @@ h3 {
     font-size: 20px;
   }
 }
+@media all and (max-width: 768px) {
+  .other_works .works .img {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 32px;
+  }
+}
 .other_works .works .work_img2,
 .other_works .works .work_img7 {
   margin-left: 12px;
   margin-right: 12px;
 }
+@media all and (max-width: 768px) {
+  .other_works .works .work_img2,
+.other_works .works .work_img7 {
+    margin: 0px;
+    margin-top: 32px;
+  }
+}
 .other_works .works .work_img4 {
   margin-right: 12px;
+}
+@media all and (max-width: 768px) {
+  .other_works .works .work_img4 {
+    margin: 0px;
+    margin-top: 32px;
+  }
 }
 
 .footer {
